@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). #[Preview](https://roma-kamenivskyi.github.io/githubFinder)
+#[Preview](https://kamenivskyi.github.io/githubFinder)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
 
 ## Available Scripts
 
