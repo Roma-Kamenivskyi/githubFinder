@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "//roma-kamenivskyi.github.io/githubFinder/static/css/main.39491247.chunk.css",
-    "main.js": "//roma-kamenivskyi.github.io/githubFinder/static/js/main.d15296d6.chunk.js",
-    "main.js.map": "//roma-kamenivskyi.github.io/githubFinder/static/js/main.d15296d6.chunk.js.map",
-    "runtime~main.js": "//roma-kamenivskyi.github.io/githubFinder/static/js/runtime~main.548492ce.js",
-    "runtime~main.js.map": "//roma-kamenivskyi.github.io/githubFinder/static/js/runtime~main.548492ce.js.map",
-    "static/js/2.e656bfc4.chunk.js": "//roma-kamenivskyi.github.io/githubFinder/static/js/2.e656bfc4.chunk.js",
-    "static/js/2.e656bfc4.chunk.js.map": "//roma-kamenivskyi.github.io/githubFinder/static/js/2.e656bfc4.chunk.js.map",
-    "index.html": "//roma-kamenivskyi.github.io/githubFinder/index.html",
-    "precache-manifest.52c0072e2fff1f899e8e9427e02aaa2a.js": "//roma-kamenivskyi.github.io/githubFinder/precache-manifest.52c0072e2fff1f899e8e9427e02aaa2a.js",
-    "service-worker.js": "//roma-kamenivskyi.github.io/githubFinder/service-worker.js",
-    "static/css/main.39491247.chunk.css.map": "//roma-kamenivskyi.github.io/githubFinder/static/css/main.39491247.chunk.css.map"
+    "main.css": "/githubFinder/static/css/main.39491247.chunk.css",
+    "main.js": "/githubFinder/static/js/main.d060010f.chunk.js",
+    "main.js.map": "/githubFinder/static/js/main.d060010f.chunk.js.map",
+    "runtime~main.js": "/githubFinder/static/js/runtime~main.1efe9dee.js",
+    "runtime~main.js.map": "/githubFinder/static/js/runtime~main.1efe9dee.js.map",
+    "static/js/2.e656bfc4.chunk.js": "/githubFinder/static/js/2.e656bfc4.chunk.js",
+    "static/js/2.e656bfc4.chunk.js.map": "/githubFinder/static/js/2.e656bfc4.chunk.js.map",
+    "index.html": "/githubFinder/index.html",
+    "precache-manifest.e4558c916a5c3e7379e88471f27c19be.js": "/githubFinder/precache-manifest.e4558c916a5c3e7379e88471f27c19be.js",
+    "service-worker.js": "/githubFinder/service-worker.js",
+    "static/css/main.39491247.chunk.css.map": "/githubFinder/static/css/main.39491247.chunk.css.map"
   }
 }
