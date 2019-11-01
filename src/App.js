@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import Users from "./components/users/Users";
 import User from "./components/users/User";
@@ -18,7 +18,6 @@ class App extends Component {
     alert: null
   };
 
-  // when component added to DOM
   async componentDidMount() {
     this.setState({ loading: true });
     const res = await axios.get(
@@ -28,7 +27,6 @@ class App extends Component {
     this.setState({ users: res.data, loading: false });
   }
 
-  // Search GitHub users
   searchUsers = async text => {
     this.setState({ loading: true });
     const res = await axios.get(
@@ -38,30 +36,24 @@ class App extends Component {
     this.setState({ users: res.data.items, loading: false });
   };
 
-  // Get single github user
   getUser = async username => {
     this.setState({ loading: true });
     const res = await axios.get(
       `https://api.github.com/users/${username}?client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
     );
     this.setState({ user: res.data, loading: false });
-    console.log(this.state.user);
   };
 
-  // Get users repos
   getUserRepos = async username => {
     this.setState({ loading: true });
     const res = await axios.get(
       `https://api.github.com/users/${username}/repos?per_page=5&sort=created:asc&client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
     );
     this.setState({ repos: res.data, loading: false });
-    console.log(this.state.repos);
   };
 
-  // Clear users from state
   clearUsers = () => this.setState({ users: [], loading: false });
 
-  // Set alert
   setAlert = (msg, type) => {
     this.setState({ alert: { msg, type } });
     setTimeout(() => {

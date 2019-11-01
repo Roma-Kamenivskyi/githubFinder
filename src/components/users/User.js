@@ -19,11 +19,9 @@ class User extends Component {
   };
 
   render() {
-    console.log("props", this.props);
     const {
       name,
       avatar_url,
-      id,
       location,
       bio,
       blog,
