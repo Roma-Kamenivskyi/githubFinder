@@ -8,7 +8,6 @@ import {
   GET_ONLOAD,
   GET_REPOS,
   CLEAR_USERS,
-  SET_ALERT,
   SET_LOADING
 } from '../types';
 
