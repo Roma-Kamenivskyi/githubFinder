@@ -1,4 +1,4 @@
-# [Preview](https://kamenivskyi.github.io/githubFinder)
+# [Preview](https://kamenivskyi.github.io/githubFinder/)
 
 ## This project was done step by step during the course on [udemy](https://www.udemy.com/course/modern-react-front-to-back/)
 
