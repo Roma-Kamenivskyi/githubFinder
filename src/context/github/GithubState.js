@@ -5,7 +5,6 @@ import GithubReducer from './githubReducer';
 import {
   SEARCH_USERS,
   GET_USER,
-  GET_ONLOAD,
   GET_REPOS,
   CLEAR_USERS,
   SET_LOADING
@@ -21,15 +20,6 @@ const GithubState = props => {
   };
 
   const [state, dispatch] = useReducer(GithubReducer, initialState);
-
-  const getUsersOnload = async () => {
-    setLoading();
-    const res = await axios.get(
-      `https://api.github.com/users?&client_id=
-        ${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
-    );
-    dispatch({ type: GET_ONLOAD, payload: res.data });
-  };
 
   // search user
   const searchUsers = async text => {
@@ -84,8 +74,7 @@ const GithubState = props => {
         searchUsers,
         clearUsers,
         getUser,
-        getUserRepos,
-        getUsersOnload
+        getUserRepos
       }}
     >
       {props.children}

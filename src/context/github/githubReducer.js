@@ -1,7 +1,6 @@
 import {
   SEARCH_USERS,
   GET_USER,
-  GET_ONLOAD,
   GET_REPOS,
   CLEAR_USERS,
   SET_LOADING
@@ -19,12 +18,6 @@ export default (state, action) => {
       return {
         ...state,
         user: action.payload,
-        loading: false
-      };
-    case GET_ONLOAD:
-      return {
-        ...state,
-        users: action.payload,
         loading: false
       };
     case GET_REPOS:
