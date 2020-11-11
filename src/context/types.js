@@ -1,8 +1,12 @@
-export const SEARCH_USERS = 'SEARCH_USERS';
-export const GET_USER = 'GET_USER';
-export const GET_ONLOAD = 'GET_USERS_ONLOAD';
-export const CLEAR_USERS = 'CLEAR_USERS';
-export const GET_REPOS = 'GET_REPOS';
-export const SET_LOADING = 'SET_LOADING';
-export const SET_ALERT = 'SET_ALERT';
-export const REMOVE_ALERT = 'REMOVE_ALERT';
+const actionTypes = {
+  SEARCH_USERS: 'SEARCH_USERS',
+  GET_USER: 'GET_USER',
+  GET_ONLOAD: 'GET_USERS_ONLOAD',
+  CLEAR_USERS: 'CLEAR_USERS',
+  GET_REPOS: 'GET_REPOS',
+  SET_LOADING: 'SET_LOADING',
+  SET_ALERT: 'SET_ALERT',
+  REMOVE_ALERT: 'REMOVE_ALERT',
+};
+
+export default actionTypes;

@@ -3,16 +3,13 @@ import GithubContext from '../../context/github/githubContext';
 import AlertContext from '../../context/alert/alertContext';
 
 const Search = () => {
-  const githubContext = useContext(GithubContext);
-  const alertContext = useContext(AlertContext);
-
-  const { users, clearUsers, searchUsers } = githubContext;
-  const { setAlert } = alertContext;
+  const { users, clearUsers, searchUsers } = useContext(GithubContext);
+  const { setAlert } = useContext(AlertContext);
   const [text, setText] = useState('');
 
   const onSubmit = evt => {
     evt.preventDefault();
-    if (text === '') {
+    if (text.trim() === '') {
       setAlert('Please enter something', 'light');
     } else {
       searchUsers(text);
